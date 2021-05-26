@@ -1,0 +1,46 @@
+.contact-container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: #d49e81;
+
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 600px;
+    padding: 3em;
+    gap: 2em;
+}
+
+.header-contact{
+    padding: 10px;
+    text-align: center;
+    margin: 40px;
+}
+
+.contact-container> main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.connect-links-section{
+    text-align: center ;
+    height:100%;
+    width: 600px;
+    padding: 3em;
+    gap: 2em;
+}
+
+.contact-icon{
+    margin-top: 3em;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}

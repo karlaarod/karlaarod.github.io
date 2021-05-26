@@ -1,0 +1,35 @@
+.project-container{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 0;
+
+}
+
+.project-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 400px;
+
+}
+.project-img{
+    width: 100%;
+    height: 260px;
+}
+
+.project-details{
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.single-project-card{
+    width: 400px;
+}
+
