@@ -1,23 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  AppBar,
-  Button,
-  IconButton,
-  Toolbar,
-  Typography,
-} from "@material-ui/core";
+import { AppBar, Toolbar } from "@material-ui/core";
 import { Link, animateScroll as scroll } from "react-scroll";
-import ExpandLessIcon from "@material-ui/icons/ExpandLess";
-import { useHistory } from "react-router";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     margin: "5 em",
     color: "black",
-    marginBottom:'1em',
-
+    marginBottom: "1em",
   },
   menuButton: {
     marginRight: theme.spacing(3),
@@ -34,28 +25,19 @@ const useStyles = makeStyles((theme) => ({
 
 const NavBar = () => {
   const classes = useStyles();
-  const [anchorEl, setAnchorEl] = useState(null);
-  const history = useHistory();
-
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-
-  const handleMenuChange = (pageURL) => {
-    history.push(pageURL);
-    setAnchorEl(null);
-  };
 
   return (
-    <nav className={classes.roots} >
+    <nav className={classes.roots}>
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className="name-nav">
-        <Link 
-          className={classes.title}
-        to='landing-page'
-        spy={true} smooth={true}
+          <Link
+            className={classes.title}
+            to="landing-page"
+            spy={true}
+            smooth={true}
           >
-          <h3>Karla Rodriguez</h3> </Link>
+            <h3>Karla Rodriguez</h3>{" "}
+          </Link>
           <Link to="about" spy={true} smooth={true}>
             About
           </Link>

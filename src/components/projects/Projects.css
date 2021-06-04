@@ -3,10 +3,7 @@
     margin: auto;
     padding: 0;
     text-align: center;
-    /* height: 600px; */
     margin-bottom: 40px;
-
-
 }
 
 .project-cards{
@@ -33,8 +30,6 @@
 span.project-details>*{
     padding: 5px;
 }
-
-
 
 
 .single-project-dialog{

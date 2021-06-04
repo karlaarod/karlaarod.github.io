@@ -1,4 +1,4 @@
-import { Card, CardContent, Grid, Paper } from "@material-ui/core";
+import { Card} from "@material-ui/core";
 import React from "react";
 import SkillsData from "./SkillsData";
 import "./Skills.css";
