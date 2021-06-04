@@ -5,10 +5,13 @@
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.58",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "browser-router": "^0.2.0",
+    "dotenv": "^10.0.0",
+    "emailjs-com": "^2.6.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-material-ui-carousel": "^2.2.6",
@@ -16,6 +19,7 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
     "react-scroll-motion": "^0.2.1",
+    "react-slideshow-image": "^3.4.6",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

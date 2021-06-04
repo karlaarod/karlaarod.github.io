@@ -1,10 +1,8 @@
-#about{
-    margin: 0;
+.about-container{
+    margin:10px;
     width: 100%;
-    left: 0;
-    right: 0;
     height: 600px;
-    background-color: #424b5493;
+    margin-bottom: 40px;
 
 }
 
@@ -24,15 +22,15 @@
 
 
 span >p{
-    margin-top: 4em;
-    font-size: 1.2em;
+    margin-top: 1em;
+    font-size: 1em;
     color: #68412b;
 }
 
 .about-details{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+    flex-direction: row;
+    justify-items: space-evenly;
     height: 100%;
     padding: 10px;
     text-align: center;
@@ -43,7 +41,7 @@ span >p{
 
 
 .about-details >img{
-margin-left: 1em;  
-height: auto;
-width: auto;  
+height: 100%;
+width: 45%;  
+margin-right: 50px;
 }

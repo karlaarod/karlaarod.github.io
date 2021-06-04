@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+@media screen and (min-width: 0) and (max-width: 1539px) and (orientation: landscape){
+    #app, #main-body {
+        width: 100%;
+
+    font-size: calc((1.2 - 1) * 1.2vw + 1rem);
+}}
+
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +27,10 @@ body {
 .name-nav, h1{
     text-transform: uppercase;
     color: black;
+}
+
+h1{
+    padding: 20px;
 
 }
 
@@ -27,23 +41,78 @@ body {
     margin-top: 0;
 }
 
+.media-icon:hover{
+    box-shadow:0px 10px 30px rgb(49, 94, 84);
+}
+
 a{
     padding: .5em;
     font-size: 15px;
 
 }
 a:hover{
-    color: #BF4D36;
+    color: rgb(49, 94, 84);
     cursor: pointer;
     text-decoration: solid;
 
 }
 
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+header{
+    animation: 1s ease-in-out 0s 1 slideInFromLeft;
+
+}
+
+@keyframes slideInFromLeftWelcome {
+    0% {
+        transform: translatex(-100%);
+    }
+    100% {
+        transform: translateX(-2);
+    }
+}
+
+#welcome{ 
+    position: absolute;
+    float: left;
+    text-align:center;
+    color:black;
+    top: 40%;
+    left: 5%;
+    /* transform: translate(-50%, -50%); */
+    height: '500px';
+    animation: 1s ease 0s 1 slideInFromLeftWelcome;
+
+}
+
+#main-body{
+    margin-top:10%;
+}
 
 
-  @media screen and (min-width: 0) and (max-width: 1539px) and (orientation: landscape){
-    #app, #main-body {
-        width: 100%;
+.home-img{
+    width:50%;
+    height:95vh;
+    background:linear-gradient(100deg,rgba(58, 53, 54, 0.37),rgba(191, 77, 54, 0.74)),url('https://images.unsplash.com/photo-1517483355902-ec2136d1c0a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=80') center center;
+    margin: 2.5em;
 
-    font-size: calc((1.2 - 1) * 1.2vw + 1rem);
-}}
+}
+
+p{
+    font-family: 'Gilda Display', serif;
+    line-height: 1.2em;
+    font-size: 10px;
+}
+
+.copyright{
+    text-align: center;
+    margin: 10px;
+}

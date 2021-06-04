@@ -1,35 +1,48 @@
 .project-container{
-    display: block;
-    text-align: center;
     width: 100%;
     margin: auto;
-    margin-top: 10%;
     padding: 0;
+    text-align: center;
+    /* height: 600px; */
+    margin-bottom: 40px;
+
 
 }
 
 .project-cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap: 5px;
-    width: 100%;
-    height: 400px;
+    display: flex;
+    text-align: row;
+    justify-content: space-between;
+    margin: auto;
+    gap: 10px;
+    width:90%;
+    padding: 1em;
 
 }
 .project-img{
-    width: 100%;
-    height: 260px;
+    width:100%;
+    height: 400px;
 }
 
-.project-details{
+.dialog-img{
+    width:60%;
+    height: 50%;
+
+}
+
+span.project-details>*{
+    padding: 5px;
+}
+
+
+
+
+.single-project-dialog{
     display: flex;
-    direction: row;
-    justify-content: space-between;
-    margin-top: 1em;
-}
-
-.single-project-card{
-    width: 400px;
+    flex-direction: row;
+    gap: 15px;
+    width: 860px;
+    margin: auto;
+    padding: 1em;
 }
 

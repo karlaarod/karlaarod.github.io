@@ -1,42 +1,18 @@
-import { Button, Link, TextareaAutosize, TextField } from "@material-ui/core";
+import {Link} from "@material-ui/core";
 import React from "react";
-import {
-  Animator,
-  batch,
-  Fade,
-  Move,
-  ScrollContainer,
-  ScrollPage,
-  Sticky,
-} from "react-scroll-motion";
 import "./Contact.css";
+import ContactForm from "./ContactForm";
+import PinDropIcon from '@material-ui/icons/PinDrop';
 
 const Contact = () => {
-  const FadeUp = batch(Fade(), Move(), Sticky());
 
   return (
     <div className="contact-container" id="contact">
-      <h1 className="header-contact">Contact Me</h1>
+      <h1 className="header-contact">Get in Touch</h1>
       <main>
-        <form>
-          <section className="contact-info">
-            <TextField required label="Name" />
-            <TextField required label="Email" />
-            <TextField required label="Subject" />
-            <TextareaAutosize
-              required
-              rowsMin={8}
-              placeholder="Type your message here"
-            />
-            <Button
-              style={{ background: "#FFFFFF", color: "#424B54", width: "20%" }}
-            >
-              Submit
-            </Button>
-          </section>
-        </form>
+      <ContactForm/>
         <section className="connect-links-section">
-          <h2>Lets Connect!</h2>
+          <h2>Stay Connected</h2>
           <Link
             href="https://www.linkedin.com/in/karlaarodriguez/"
             target={"_blank"}
@@ -53,13 +29,16 @@ const Contact = () => {
             target={"_blank"}
             rel={"noopener noreferrer"}
           >
-            {" "}
             <img
               class="contact-icon"
               alt="github"
               src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png"
             />
           </Link>
+          <div className='pindrop-location'>
+          <PinDropIcon/>
+              <h3>Los Angeles, CA</h3>
+              </div>
         </section>
       </main>
     </div>
